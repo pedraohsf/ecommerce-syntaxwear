@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyntaxWear | Moda para Desenvolvedores</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./favicons/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Base e Layout (Estrutura Global) -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    
+    <!-- CSS de Componentes -->
+    <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/components/panel.css">
+    <link rel="stylesheet" href="./css/components/hero.css">
+    <link rel="stylesheet" href="./css/components/product-card.css">
+    <link rel="stylesheet" href="./css/components/product-grid.css">
+    <link rel="stylesheet" href="./css/components/newsletter.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO (Header) -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">SyntaxWear<span>_</span></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Moletons</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-icon" aria-label="Carrinho">🛒 <span class="cart-count">0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAINEL DE AVISOS / PROMOÇÃO (Panel) -->
+    <div class="promo-panel">
+        <div class="container">
+            <p>🔥 Cupom <code>PRIMEIRO_COMMIT</code> dá 10% de desconto em toda a loja!</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- SEÇÃO DESTAQUE (Hero) -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Vista o seu código com estilo!</h1>
+                    <p>Camisetas, moletons e acessórios premium feitos por devs para devs. Qualidade impecável com as piadas e sintaxes que você mais ama.</p>
+                    <a href="#produtos" class="btn btn-primary">Ver Coleção</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder para a imagem de destaque -->
+                    <div class="hero-image-placeholder">
+                        <code>&lt;img src="hero-banner" /&gt;</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PRODUTOS -->
+        <section id="produtos" class="products-section container">
+            <div class="section-title">
+                <h2>Os Mais Vendidos <span>{"push"}</span></h2>
+                <p>Nossos itens favoritos selecionados para você debugar o seu guarda-roupa.</p>
+            </div>
+
+            <!-- Grade de Produtos (Product Grid) -->
+            <div class="product-grid">
+                
+                <!-- CARD DE PRODUTO 1 (Product Card) -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="badge">Novo</span>
+                        <div class="img-placeholder">&lt;div class="css-coffee" /&gt;</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Camisetas</p>
+                        <h3 class="product-title">Camiseta "Coffee.css"</h3>
+                        <p class="product-description">Seja movido a café e folhas de estilo estilosas.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">R$ 89,90</span>
+                            <button class="btn btn-add" aria-label="Adicionar ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD DE PRODUTO 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="badge sale">Promoção</span>
+                        <div class="img-placeholder">&lt;git status --clean /&gt;</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Moletons</p>
+                        <h3 class="product-title">Moletom "Git Status"</h3>
+                        <p class="product-description">Para os dias frios onde tudo está limpo e commitado.</p>
+                        <div class="product-price-row">
+                            <span class="product-price-old">R$ 199,90</span>
+                            <span class="product-price">R$ 159,90</span>
+                            <button class="btn btn-add" aria-label="Adicionar ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD DE PRODUTO 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder">&lt;hello world /&gt;</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Acessórios</p>
+                        <h3 class="product-title">Caneca "Hello World"</h3>
+                        <p class="product-description">O clássico que nunca sai de moda na mesa de trabalho.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">R$ 45,00</span>
+                            <button class="btn btn-add" aria-label="Adicionar ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD DE PRODUTO 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder">[object Object]</div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Camisetas</p>
+                        <h3 class="product-title">Camiseta "JS Object"</h3>
+                        <p class="product-description">A resposta favorita para quem pergunta sobre mistérios.</p>
+                        <div class="product-price-row">
+                            <span class="product-price">R$ 89,90</span>
+                            <button class="btn btn-add" aria-label="Adicionar ao carrinho">+</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- NEWSLETTER (Newsletter) -->
+        <section class="newsletter">
+            <div class="container newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Assine nossa Newsletter <span>&lt;input /&gt;</span></h2>
+                    <p>Fique por dentro de novos lançamentos, memes e cupons de desconto secretos de programação.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrito com sucesso!');">
+                    <input type="email" placeholder="seu-email@dominio.com" required>
+                    <button type="submit" class="btn btn-secondary">Inscrever</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ (Footer) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#">SyntaxWear<span>_</span></a>
+                <p>O estilo definitivo para quem transforma café em soluções digitais.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Políticas de Envio</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="GitHub">😺</a>
+                    <a href="#" aria-label="LinkedIn">🔗</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SyntaxWear. Feito com &hearts; para amantes de código.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
