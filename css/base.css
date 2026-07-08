@@ -2,3 +2,12 @@
    css/base.css
    Escreva aqui seus resets, tipografia global, variáveis CSS e estilos de base.
    ========================================================================== */
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
