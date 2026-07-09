@@ -25,6 +25,7 @@ body {
 ul[role="list"], ol[role="list"], ul, ol {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 /* Make images, videos and svg responsive */
